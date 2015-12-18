@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>VT or MA</title>
+
+<link rel="stylesheet" type="text/css" href="media/css/style.css" />
+</head>
+<body id="home">
+<script>
+
+var guess = "red";
+var answer = null;
+
+var answers = [ "Vermont",
+"Friendsmas"];
+
+var index = Math.floor(Math.random() * answers.length);
+
+if (guess == answers[index]) {
+answer = "Yes! I was thinking " + answers[index];
+} else {
+answer = "You should go to " + answers[index];
+}
+alert(answer);
+
+</script>
+</body>
+</html>
+ 
